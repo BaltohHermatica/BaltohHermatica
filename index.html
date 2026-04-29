@@ -102,6 +102,52 @@
       color: #b8962e;
       background: linear-gradient(to bottom, #808080, #000000);
     }
+    /* Membership form styling */
+    #membership form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    #membership label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    #membership input,
+    #membership textarea,
+    #membership button {
+      width: 100%;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #membership textarea {
+      resize: vertical;
+    }
+
+    #membership button {
+      background: linear-gradient(to right, #FFFF00, #FFA500);
+      color: black;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #membership button:hover {
+      opacity: 0.9;
+    }
+
+    #membership input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }
   </style>
 </head>
 

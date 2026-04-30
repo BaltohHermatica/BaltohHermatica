@@ -149,6 +149,9 @@
       margin-right: 5px;
     }
   </style>
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAvPyruM0DX6HxL4uaAXTQfcphRrEat2Spxpv7VrXGZjVnEgFhVhfIgqaeDPyCV0z56X6VKtkdZovBkxo&components=hosted-buttons&disable-funding=venmo&currency=USD">
+</script>
 </head>
 
 <body>
@@ -164,6 +167,7 @@
     <a href="#membership">Membership</a>
     <a href="#meetings">Meetings</a>
     <a href="#resources">Resources</a>
+    <a href="#donate">Donate</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -257,6 +261,19 @@
       These materials are carefully arranged to support gradual learning, allowing the student to engage with the principles in a
       disciplined and progressive manner while deepening both understanding and practice overtime.
     </p>
+  </div>
+</section>
+
+<section id="donate">
+  <h2>Donate</h2>
+  <div class"card">
+    <p>Your donations help sustain our mission and teachings</p>
+    <div id="paypal-container-D5D52KT48JLFJ"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "D5D52KT48JLFJ",
+  }).render("#paypal-container-D5D52KT48JLFJ")
+</script>
   </div>
 </section>
 

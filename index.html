@@ -266,17 +266,14 @@
 
 <section id="donate">
   <h2>Donate</h2>
-  <div class"card">
+  <div class="card">
     <p>Your donations help sustain our mission and teachings</p>
     <iframe 
-      src="https://demo.pesapal.com/API/PostPesapalDirectOrderV4?
-           oauth_consumer_key=60es+/UH3C+0x/MCUqePf0Mcl7Us4NnY
-           &oauth_signature=GENERATED_SIGNATURE
-           &amount=100
-           &description=Donation
-           &reference=ORDER123
-           &callback_url=https://yourwebsite.com/callback"
-      width="100%" height="700px" scrolling="no" frameBorder="0">
+      id="pesapal-frame"
+      width="100%" 
+      height="700" 
+      scrolling="no" 
+      frameborder="0">
     </iframe>
   </div>
 </section>
@@ -296,6 +293,17 @@
   <p>LVX </p>
   <p>&copy; 2026 Baltoh Hermatica</p>
 </footer>
+
+<script>
+  async function loadPesapalIframe() {
+    const res = await fetch("/.netlify/functions/pesapal");
+    const data = await res.json();
+
+    document.querySelector("#pesapal-frame").src = data.checkoutUrl;
+  }
+
+  window.onload = loadPesapalIframe;
+</script>
 
 </body>
 </html>

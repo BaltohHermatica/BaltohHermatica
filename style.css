@@ -1,0 +1,141 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: #0f0f0f;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/BaltohHermatica/images/background.png);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    header {
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 20px;
+      background: linear-gradient(to bottom, #000000, #000000);
+      border-bottom: 3px solid #808080;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 2px;
+      font-size: 32px;
+      color: #b8962e;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #b8962e;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #440dc5;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      border-left: 4px solid hsl(256, 94%, 47%);
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: rgba(14, 14, 13, 0.35);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-top: 20px;
+      color: #0f0f0f;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      border: 1px solid #0e0e0e;
+      color: #0c0c0c;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #ffffff;
+      color: #000;
+    }
+
+   
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #2a2a2a;
+      font-size: 13px;
+      color: #b8962e;
+      background: linear-gradient(to bottom, #808080, #000000);
+    }
+  
+    #membership form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-family: Arial, sans-serif;
+    }
+
+    #membership label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    #membership input,
+    #membership textarea,
+    #membership button {
+      width: 100%;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    #membership textarea {
+      resize: vertical;
+    }
+
+    #membership button {
+      background: linear-gradient(to right, #FFFF00, #FFA500);
+      color: black;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #membership button:hover {
+      opacity: 0.9;
+    }
+
+    #membership input[type="radio"] {
+      width: auto;
+      margin-right: 5px;
+    }

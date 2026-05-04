@@ -11,6 +11,7 @@
     body {
       margin: 0;
       padding: 0;
+      padding bottom: 80px;
       font-family: 'Inter', sans-serif;
       color: #0f0f0f;
     }
@@ -70,7 +71,7 @@
     }
 
     .card {
-      background: rgba(14, 14, 13, 0.35);
+      background: rgba(14, 14, 13, 0.18);
       padding: 25px;
       border-radius: 12px;
       backdrop-filter: blur(8px);
@@ -96,12 +97,17 @@
 
    
     footer {
+      position: fixed;
+      bottom: 0;
+      left 0;
+      width: 100%;
       text-align: center;
       padding: 20px;
       border-top: 1px solid #2a2a2a;
       font-size: 13px;
       color: #b8962e;
       background: linear-gradient(to bottom, #808080, #000000);
+      z-index: 1000;
     }
   
     #membership form {
@@ -273,8 +279,6 @@
 
 <footer>
   <p>Khabs Am Pekht </p>
-  <p>Knox Om Pax </p>
-  <p>Light In Extension</p>
   <p>LVX </p>
   <p>&copy; 2026 Baltoh Hermatica</p>
 </footer>
